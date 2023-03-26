@@ -1,0 +1,15 @@
+body{
+    background: url("images/WIN_20230303_07_09_05_Pro.jpg") center no-repeat;
+    height: 100vh;
+    object-fit: contain;
+    /*background-color: gray;*/
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
