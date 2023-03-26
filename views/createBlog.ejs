@@ -6,17 +6,26 @@
 
 <%- include("./partials/nav.ejs") %>
 
-        <div>
+        <section class="center">
             <form action="/blogs" method="post">
-                <label for="title">Blog title:</label>
-                <input type="text" id="title" name="title" required/>
-                <label for="snippet">Blog snippet:</label>
-                <input type="text" id="snippet" name="snippet" required/>
-                <label for="body">Blog body:</label>
-                <textarea id="body" name="body" required></textarea>
-                <button>submit</button>
+                <section>
+                    <label for="title">Blog title:</label>
+                    <input type="text" id="title" name="title" required/>
+                </section>
+                <section>
+                    <label for="snippet">Blog snippet:</label>
+                    <input type="text" id="snippet" name="snippet" required/>
+                </section>
+                <section>
+                    <label for="body">Blog body:</label>
+                    <textarea id="body" name="body" required></textarea>
+                </section>
+                <section>
+                    <button>submit</button>
+                </section>
+
             </form>
-        </div>
+        </section>
 
 <%- include("./partials/footer.ejs") %>
 

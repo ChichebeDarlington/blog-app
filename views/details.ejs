@@ -6,13 +6,14 @@
 
 <%- include("./partials/nav.ejs") %>
 
-<div>
+<section class="center">
     <h2><%= blog.title%></h2>
     <div>
+        <p><%= blog.snippet %></p>
         <p><%= blog.body %></p>
     </div>
     <a class="erase" data-doc="<%= blog._id%>">Erase</a>
-</div>
+</section>
 
 <%- include("./partials/footer.ejs") %>
 
