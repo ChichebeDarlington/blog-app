@@ -12,7 +12,8 @@ nav h3{
 }
 /*footer*/
 footer{
-    text-align: end;
+    text-align: center;
+    margin-top: 1rem;
 }
 /*about*/
 section .about{

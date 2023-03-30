@@ -98,7 +98,18 @@ app.get("/blogs/:_id", (req,res)=>{
         .catch(error => console.log(error.message))
 })
 
+app.get("/blogs/:_id", (req,res)=>{
+    const _id = req.params._id;
+    Blog.findByIdAndUpdate(_id, {new:true})
+        .then(result =>{
+            res.render("details", {blog: result, title: "Blog details"})
+        })
+        .catch(error => console.log(error.message))
+})
+
 // 404 routes
 app.use( (req, res) => {
     res.status(404).render(`404`, {title: "Not found"});
 });
+
+module.exports = app
