@@ -2,12 +2,14 @@ const express = require("express");
 const mongoose = require("mongoose")
 const Blog = require("./models/blog.js")
 
+require("dotenv").config()
+
 const app = express();
 
 // mongoose connection
 const port = process.env.PORT || 5000
-mongoose.connect("mongodb+srv://chebe:chebe@merncamp.ww8hn.mongodb.net/blog-app?retryWrites=true&w=majority")
-    .then((result)=>app.listen(port, ()=>console.log(`DB CONNECT @ port ${port}`)))
+mongoose.connect(process.env.MONGO_URI)
+    .then((result)=>app.listen(process.env.port, ()=>console.log(`DB CONNECT @ port ${port}`)))
     .catch((error)=>console.log(error))
 
 // Register view engine
