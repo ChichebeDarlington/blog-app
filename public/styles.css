@@ -14,8 +14,14 @@ nav h3 {
   /* line-height: 3; */
 }
 /*footer*/
+<<<<<<< HEAD
 footer {
   text-align: end;
+=======
+footer{
+    text-align: center;
+    margin-top: 1rem;
+>>>>>>> a15c3ab33c52eb23dbd21d445d62ce6302ec822d
 }
 /*about*/
 section .about {
